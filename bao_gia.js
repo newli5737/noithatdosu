@@ -12,14 +12,6 @@ const LIGHTER_BLUE = "EBF3FA";
 const WHITE = "FFFFFF";
 const DARK_TEXT = "1A1A1A";
 const MID_TEXT = "444444";
-const GOLD = "C9A84C";
-const GREEN = "1E7D4B";
-const TEAL = "0E7C7B";
-const LIGHT_TEAL = "E0F4F4";
-const PURPLE = "6B3FA0";
-const LIGHT_PURPLE = "F0E8FA";
-const ROSE = "9B2335";
-const LIGHT_ROSE = "FAEAEC";
 
 const brd = { style: BorderStyle.SINGLE, size: 1, color: "CCCCCC" };
 const borders = { top: brd, bottom: brd, left: brd, right: brd };
@@ -104,7 +96,7 @@ const doc = new Document({
                                 }),
                                 new TableCell({
                                     borders: noBorders, shading: { fill: BRAND_BLUE, type: ShadingType.CLEAR }, margins: { top: 110, bottom: 110, left: 200, right: 200 }, verticalAlign: VerticalAlign.CENTER,
-                                    children: [new Paragraph({ alignment: AlignmentType.RIGHT, children: [new TextRun({ text: "BÁO GIÁ WEBSITE THỜI TRANG / PHỤ KIỆN", color: GOLD, bold: true, size: 17, font: "Arial" })] })]
+                                    children: [new Paragraph({ alignment: AlignmentType.RIGHT, children: [new TextRun({ text: "BÁO GIÁ WEBSITE NỘI THẤT", color: ACCENT_BLUE, bold: true, size: 17, font: "Arial" })] })]
                                 })
                             ]
                         })]
@@ -138,27 +130,27 @@ const doc = new Document({
             }),
             new Paragraph({
                 alignment: AlignmentType.CENTER, spacing: { before: 0, after: 60 },
-                children: [new TextRun({ text: "THỜI TRANG & PHỤ KIỆN", bold: true, size: 44, color: ACCENT_BLUE, font: "Arial" })]
+                children: [new TextRun({ text: "NỘI THẤT CAO CẤP", bold: true, size: 44, color: ACCENT_BLUE, font: "Arial" })]
             }),
             new Paragraph({
                 alignment: AlignmentType.CENTER, spacing: { before: 0, after: 60 },
-                children: [new TextRun({ text: "Minimal design · Cửa hàng online · Mobile-first · Next.js", size: 21, color: GOLD, font: "Arial", italics: true })]
+                children: [new TextRun({ text: "Luxury design · Showcase dự án · Tối ưu chuyển đổi · Next.js", size: 21, color: ACCENT_BLUE, font: "Arial", italics: true })]
             }),
             new Paragraph({
                 alignment: AlignmentType.CENTER, spacing: { before: 60, after: 200 },
-                border: { bottom: { style: BorderStyle.SINGLE, size: 6, color: GOLD, space: 1 } },
-                children: [new TextRun({ text: "Ngày lập: 09/05/2026   |   Hiệu lực báo giá: 30 ngày", size: 20, color: MID_TEXT, font: "Arial" })]
+                border: { bottom: { style: BorderStyle.SINGLE, size: 6, color: ACCENT_BLUE, space: 1 } },
+                children: [new TextRun({ text: "Ngày lập: 13/05/2026   |   Hiệu lực báo giá: 30 ngày", size: 20, color: MID_TEXT, font: "Arial" })]
             }),
 
             // ── INFO TABLE ──
             new Table({
                 width: { size: 9906, type: WidthType.DXA }, columnWidths: [2600, 7306],
                 rows: [
-                    new TableRow({ children: [cell("Kính gửi", { bold: true, fill: BRAND_BLUE, color: WHITE, width: 2600 }), cell("Quý khách hàng — Thương hiệu thời trang / phụ kiện", { bold: true, fill: LIGHTER_BLUE, width: 7306, color: BRAND_BLUE })] }),
-                    new TableRow({ children: [cell("Dự án", { bold: true, fill: LIGHT_BLUE, width: 2600 }), cell("Website bán hàng thời trang / phụ kiện — phong cách minimal, chuẩn brand", { width: 7306, bold: true, color: BRAND_BLUE })] }),
-                    new TableRow({ children: [cell("Tech stack", { bold: true, fill: LIGHTER_BLUE, width: 2600 }), cell("Next.js · React.js · TailwindCSS · Node.js · PostgreSQL", { width: 7306, bold: true, color: TEAL })] }),
+                    new TableRow({ children: [cell("Kính gửi", { bold: true, fill: BRAND_BLUE, color: WHITE, width: 2600 }), cell("Thương hiệu Nội Thất Đức Dương", { bold: true, fill: LIGHTER_BLUE, width: 7306, color: BRAND_BLUE })] }),
+                    new TableRow({ children: [cell("Dự án", { bold: true, fill: LIGHT_BLUE, width: 2600 }), cell("Website giới thiệu công ty nội thất cao cấp — phong cách sang trọng, luxury", { width: 7306, bold: true, color: BRAND_BLUE })] }),
+                    new TableRow({ children: [cell("Tech stack", { bold: true, fill: LIGHTER_BLUE, width: 2600 }), cell("Next.js 15 · TailwindCSS v4 · Framer Motion", { width: 7306, bold: true, color: BRAND_BLUE })] }),
                     new TableRow({ children: [cell("Hình thức", { bold: true, fill: LIGHT_BLUE, width: 2600 }), cell("Hợp đồng theo dự án — hỗ trợ lâu dài, mở rộng linh hoạt", { width: 7306 })] }),
-                    new TableRow({ children: [cell("Bảo hành", { bold: true, fill: LIGHTER_BLUE, width: 2600 }), cell("12 tháng — sửa lỗi kỹ thuật miễn phí", { width: 7306, bold: true, color: GREEN })] }),
+                    new TableRow({ children: [cell("Bảo hành", { bold: true, fill: LIGHTER_BLUE, width: 2600 }), cell("12 tháng — sửa lỗi kỹ thuật miễn phí", { width: 7306, bold: true, color: BRAND_BLUE })] }),
                     new TableRow({ children: [cell("Thanh toán", { bold: true, fill: LIGHT_BLUE, width: 2600 }), cell("Chuyển khoản — xuất hóa đơn VAT điện tử đầy đủ", { width: 7306 })] }),
                 ]
             }),
@@ -167,7 +159,7 @@ const doc = new Document({
 
             // ── SECTION 1 ── Mô tả
             sectionHeading("1. MÔ TẢ DỰ ÁN"),
-            body("Website thương mại điện tử dành cho thương hiệu thời trang / phụ kiện, lấy cảm hứng từ phong cách minimal, tinh tế — tương tự waa. studios. Tập trung vào trải nghiệm người dùng mượt mà, hình ảnh sản phẩm nổi bật, tốc độ tải trang nhanh và chuẩn SEO."),
+            body("Website giới thiệu công ty thiết kế và thi công nội thất cao cấp. Lấy cảm hứng từ phong cách sang trọng, tinh tế (luxury / premium), thể hiện đẳng cấp qua màu sắc, typography và hiệu ứng cuộn mượt mà. Đặc biệt tập trung showcase các dự án đã hoàn thành, bộ sưu tập sản phẩm và tối ưu hoá luồng chuyển đổi qua form đặt lịch tư vấn."),
             gap(80, 0),
 
             new Table({
@@ -175,20 +167,20 @@ const doc = new Document({
                 rows: [
                     new TableRow({
                         children: [
-                            cell("🎯  Yêu cầu thực tế", { bold: true, fill: BRAND_BLUE, color: WHITE, width: 4953 }),
-                            cell("✅  Giải pháp triển khai", { bold: true, fill: TEAL, color: WHITE, width: 4953 }),
+                            cell("Yêu cầu thực tế", { bold: true, fill: BRAND_BLUE, color: WHITE, width: 4953 }),
+                            cell("Giải pháp triển khai", { bold: true, fill: ACCENT_BLUE, color: WHITE, width: 4953 }),
                         ]
                     }),
                     ...[
-                        ["Giao diện sang, minimal, đúng chất brand", "Custom design theo brand identity, không dùng template có sẵn"],
-                        ["Hiển thị sản phẩm theo danh mục, bộ sưu tập", "Trang collection, trang sản phẩm chi tiết, ảnh zoom, chọn biến thể"],
-                        ["Giỏ hàng, đặt hàng, quản lý đơn", "Giỏ hàng realtime, checkout form, quản lý đơn qua admin"],
-                        ["Dùng mượt trên điện thoại", "Mobile-first, responsive hoàn toàn, thao tác 1 tay"],
-                        ["Tốc độ nhanh, SEO tốt", "Next.js SSG/SSR — điểm Lighthouse 90+, meta OG đầy đủ"],
+                        ["Giao diện sang trọng, đẳng cấp", "Thiết kế tông màu Tối/Vàng/Trắng ấm, font chữ Serif cao cấp"],
+                        ["Hiệu ứng mượt mà", "Tích hợp Framer Motion tạo animation cuộn trang, hover effect độc đáo"],
+                        ["Trưng bày dự án & sản phẩm", "Trang Dự Án có filter, Trang Sản Phẩm lưới hiện đại, ảnh chất lượng cao"],
+                        ["Tương tác khách hàng", "Form liên hệ nổi, nút gọi/zalo động, dễ dàng đặt lịch tư vấn"],
+                        ["Tốc độ siêu nhanh, SEO tối đa", "Dùng Next.js App Router (SSR/SSG), tối ưu hình ảnh, meta/sitemap chuẩn"],
                     ].map(([req, sol], i) => new TableRow({
                         children: [
                             cell(req, { fill: i % 2 === 0 ? LIGHTER_BLUE : WHITE, width: 4953, color: MID_TEXT }),
-                            cell(sol, { fill: i % 2 === 0 ? LIGHT_TEAL : WHITE, width: 4953, color: TEAL, bold: true }),
+                            cell(sol, { fill: i % 2 === 0 ? LIGHT_BLUE : WHITE, width: 4953, color: BRAND_BLUE, bold: true }),
                         ]
                     }))
                 ]
@@ -197,39 +189,38 @@ const doc = new Document({
             gap(200, 0),
 
             // ── SECTION 2 ── Tính năng
-            sectionHeading("2. TÍNH NĂNG BÀN GIAO"),
+            sectionHeading("2. CẤU TRÚC & TÍNH NĂNG BÀN GIAO"),
             gap(80, 0),
 
-            subH("Giao diện & Trải nghiệm người dùng", ACCENT_BLUE),
-            bullet("Trang chủ: hero banner full-screen, featured collection, new arrivals, lookbook section"),
-            bullet("Trang danh mục (Collection): lưới sản phẩm, hover effect, lazy load ảnh"),
-            bullet("Trang chi tiết sản phẩm: ảnh zoom, chọn màu/size, mô tả, nút thêm giỏ hàng", true),
-            bullet("Trang About / Journal (blog): giới thiệu thương hiệu, bài viết câu chuyện sản phẩm"),
-            bullet("Đa ngôn ngữ Tiếng Việt / English (toggle)"),
-            bullet("Animation mượt khi scroll, chuyển trang — đúng cảm giác brand cao cấp"),
+            subH("Trang chủ & Layout chung", ACCENT_BLUE),
+            bullet("Header thông minh (trong suốt thành nền màu khi cuộn), Mega Menu."),
+            bullet("Hero banner: Video / Ảnh toàn màn hình, typography bay bổng."),
+            bullet("Section: Giới thiệu ngắn, Dịch vụ nổi bật, Dự án tiêu biểu, Năng lực sản xuất (nhà máy)."),
+            bullet("Footer đa cột đầy đủ thông tin: Showroom, Nhà máy, Links, Form nhận bản tin."),
+            bullet("Nút liên hệ nổi (Zalo, Gọi điện, Đặt lịch) hoạt động trơn tru trên Desktop & Mobile."),
             gap(80, 0),
 
-            subH("Mua hàng & Quản lý đơn", TEAL),
-            bullet("Giỏ hàng (drawer/slide-over): thêm, xoá, cập nhật số lượng tức thì", true),
-            bullet("Trang checkout: form thông tin giao hàng, chọn phương thức thanh toán"),
-            bullet("Tích hợp thanh toán: chuyển khoản ngân hàng (có sẵn) — COD (tuỳ chọn)"),
-            bullet("Email xác nhận đơn hàng tự động gửi cho khách"),
-            bullet("Trang tra cứu đơn hàng theo mã đơn / email"),
+            subH("Các Trang Con (Sub-pages)", ACCENT_BLUE),
+            bullet("Trang Về Chúng Tôi: Lịch sử hình thành, tầm nhìn, đội ngũ, hình ảnh nhà máy."),
+            bullet("Trang Dịch Vụ (Thiết kế & Thi công): Quy trình thực hiện, cam kết chất lượng."),
+            bullet("Trang Dự Án & Bộ Sưu Tập: Lưới hình ảnh, bộ lọc theo loại (Biệt thự, Chung cư...)."),
+            bullet("Trang Sản Phẩm: Danh mục sản phẩm gỗ óc chó (Sofa, Giường, Tủ...)."),
+            bullet("Trang Tin Tức: Bài viết tư vấn, kiến thức nội thất chuẩn SEO."),
+            bullet("Trang Liên Hệ: Form gửi thông tin, Bản đồ Google Maps các showroom."),
             gap(80, 0),
 
-            subH("Admin Dashboard", PURPLE),
-            bullet("Quản lý sản phẩm: thêm/sửa/xoá, upload ảnh, biến thể (màu, size)", true),
-            bullet("Quản lý đơn hàng: xem danh sách, cập nhật trạng thái (chờ xử lý / đang giao / hoàn thành)"),
-            bullet("Quản lý danh mục / bộ sưu tập"),
-            bullet("Xem thống kê đơn giản: tổng đơn, doanh thu theo ngày"),
+            subH("Hệ thống Quản trị (CMS)", ACCENT_BLUE),
+            bullet("Trang tổng quan: Thống kê và theo dõi các yêu cầu liên hệ mới."),
+            bullet("Quản lý Dự án & Sản phẩm: Thêm, sửa, xóa dự án/sản phẩm, upload ảnh."),
+            bullet("Quản lý Tin tức: Trình soạn thảo văn bản (Rich Text) để đăng bài blog."),
             gap(80, 0),
 
-            subH("Kỹ thuật & Deploy", GREEN),
-            bullet("Next.js 14 App Router — SSG/SSR tối ưu tốc độ, SEO"),
-            bullet("TailwindCSS — giao diện gọn nhẹ, không bloat CSS"),
-            bullet("PostgreSQL + Prisma ORM — database ổn định, dễ mở rộng"),
-            bullet("Deploy VPS Linux + Docker + Nginx + SSL (HTTPS)", true),
-            bullet("Bàn giao toàn bộ source code + tài liệu kỹ thuật + hướng dẫn vận hành"),
+            subH("Kỹ thuật & Deploy", ACCENT_BLUE),
+            bullet("Next.js 15 App Router — Kiến trúc mới nhất, tối ưu Server Components."),
+            bullet("TailwindCSS v4 — Giao diện gọn nhẹ, tuỳ chỉnh dễ dàng."),
+            bullet("Deploy VPS Linux + Docker + Nginx + SSL (HTTPS) miễn phí.", true),
+            bullet("Tích hợp robots.txt, sitemap.xml, Schema.org cấu trúc LocalBusiness."),
+            bullet("Bàn giao toàn bộ source code + hướng dẫn vận hành."),
 
             gap(200, 0),
 
@@ -249,18 +240,16 @@ const doc = new Document({
                         ]
                     }),
                     ...[
-                        ["Thiết kế UI/UX (Figma mockup, xác nhận trước khi code)", "1 tuần", "Theo brief / tham khảo"],
-                        ["Frontend — Next.js + TailwindCSS (toàn bộ giao diện)", "1.5 tuần", "Mobile-first, animation"],
-                        ["Backend + API (Node.js, quản lý sản phẩm, đơn hàng)", "1 tuần", "REST API + Admin"],
-                        ["Database PostgreSQL + Prisma ORM", "Trong backend", "Schema thiết kế chuẩn"],
-                        ["Admin Dashboard (quản lý sản phẩm, đơn hàng)", "0.5 tuần", "Giao diện đơn giản, dễ dùng"],
-                        ["Đa ngôn ngữ VI/EN", "Trong frontend", "i18n tích hợp sẵn"],
-                        ["Deploy VPS + SSL + domain + cấu hình Nginx", "2 – 3 ngày", "Sẵn sàng go-live"],
-                        ["Test, fix bug, bàn giao + hướng dẫn vận hành", "2 – 3 ngày", "UAT cùng khách hàng"],
+                        ["Thiết kế UI/UX (Concept & Animation)", "1 tuần", "Review & Chỉnh sửa"],
+                        ["Phát triển Frontend (Homepage + 8 Trang con)", "1.5 tuần", "Next.js + Tailwind + Framer"],
+                        ["Phát triển Backend & CMS Quản trị", "1 tuần", "Quản lý dữ liệu động"],
+                        ["Responsive Mobile & Tối ưu SEO (Lighthouse)", "0.5 tuần", "Đảm bảo điểm cao"],
+                        ["Deploy lên VPS (Nginx, Domain, SSL)", "2 ngày", "Sẵn sàng go-live"],
+                        ["Nghiệm thu, test thực tế & bàn giao", "3 ngày", "UAT với khách hàng"],
                     ].map(([item, time, note], i) => new TableRow({
                         children: [
                             cell(item, { fill: i % 2 === 0 ? LIGHTER_BLUE : WHITE, width: 5006 }),
-                            cell(time, { fill: i % 2 === 0 ? LIGHTER_BLUE : WHITE, width: 2450, align: AlignmentType.CENTER, bold: true, color: TEAL }),
+                            cell(time, { fill: i % 2 === 0 ? LIGHTER_BLUE : WHITE, width: 2450, align: AlignmentType.CENTER, bold: true, color: BRAND_BLUE }),
                             cell(note, { fill: i % 2 === 0 ? LIGHTER_BLUE : WHITE, width: 2450, color: "888888", italic: true }),
                         ]
                     })),
@@ -283,19 +272,19 @@ const doc = new Document({
                                 margins: { top: 160, bottom: 160, left: 200, right: 200 },
                                 verticalAlign: VerticalAlign.CENTER,
                                 children: [
-                                    new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: "💰  GIÁ TRỌN GÓI", bold: true, color: WHITE, size: 22, font: "Arial" })] }),
+                                    new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: "GIÁ TRỌN GÓI", bold: true, color: WHITE, size: 22, font: "Arial" })] }),
                                     new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: "(chưa VAT)", color: "BDD7EE", size: 18, font: "Arial", italics: true })] }),
                                 ]
                             }),
                             new TableCell({
                                 width: { size: 4953, type: WidthType.DXA },
                                 borders,
-                                shading: { fill: GOLD, type: ShadingType.CLEAR },
+                                shading: { fill: ACCENT_BLUE, type: ShadingType.CLEAR },
                                 margins: { top: 160, bottom: 160, left: 200, right: 200 },
                                 verticalAlign: VerticalAlign.CENTER,
                                 children: [
-                                    new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: "6.000.000 – 9.000.000 đ", bold: true, color: BRAND_BLUE, size: 36, font: "Arial" })] }),
-                                    new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: "Thời gian thực hiện: 4 – 5 tuần", bold: true, color: BRAND_BLUE, size: 20, font: "Arial" })] }),
+                                    new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: "10.000.000 đ", bold: true, color: WHITE, size: 36, font: "Arial" })] }),
+                                    new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: "Thời gian thực hiện: ~3-4 tuần", bold: true, color: WHITE, size: 20, font: "Arial" })] }),
                                 ]
                             }),
                         ]
@@ -304,83 +293,14 @@ const doc = new Document({
             }),
 
             gap(100, 0),
-            body("★  Giá trên là khoảng tham khảo, chưa bao gồm VAT 10%. Mức chính xác xác nhận sau khi trao đổi yêu cầu chi tiết.", { italic: true }),
-            body("★  Chi phí server/VPS, tên miền, dịch vụ email (nếu có) do Khách hàng tự chịu (khoảng 1–2 triệu/năm).", { italic: true }),
-            body("★  Tính năng thanh toán online (MoMo, VNPay, Stripe...) có thể tích hợp thêm, báo giá riêng nếu cần.", { italic: true }),
+            body("★ Giá trên là báo giá trọn gói bao gồm thiết kế, phát triển Frontend và hệ thống CMS Backend.", { italic: true }),
+            body("★ Tặng kèm miễn phí dịch vụ VPS 1 năm đầu tiên.", { italic: true }),
+            body("★ Hỗ trợ cập nhật và chỉnh sửa nội dung trong thời gian bảo hành.", { italic: true }),
 
             gap(200, 0),
 
-            // ── SECTION 4 ── Tech Stack
-            sectionHeading("4. KIẾN TRÚC & CÔNG NGHỆ"),
-
-            new Table({
-                width: { size: 9906, type: WidthType.DXA },
-                columnWidths: [2000, 3506, 4400],
-                rows: [
-                    new TableRow({
-                        children: [
-                            cell("Layer", { bold: true, fill: BRAND_BLUE, color: WHITE, width: 2000 }),
-                            cell("Công nghệ", { bold: true, fill: BRAND_BLUE, color: WHITE, width: 3506 }),
-                            cell("Vai trò", { bold: true, fill: BRAND_BLUE, color: WHITE, width: 4400 }),
-                        ]
-                    }),
-                    ...[
-                        ["Frontend", "Next.js 14 + React.js", "App Router, SSG/SSR, SEO tốt, tốc độ cao"],
-                        ["UI / Styling", "TailwindCSS + Framer Motion", "Minimal design, animation mượt, mobile-first"],
-                        ["Backend / API", "Node.js (Next.js API Routes)", "REST API, xử lý đơn hàng, auth admin"],
-                        ["Database", "PostgreSQL + Prisma ORM", "Lưu sản phẩm, đơn hàng, danh mục"],
-                        ["Auth Admin", "NextAuth.js + JWT", "Đăng nhập admin an toàn"],
-                        ["Upload ảnh", "Cloudinary / S3", "CDN ảnh sản phẩm tốc độ cao"],
-                        ["Email", "Resend / Nodemailer", "Xác nhận đơn hàng tự động"],
-                        ["Deploy", "VPS Linux + Docker + Nginx", "HTTPS, ổn định, dễ scale"],
-                    ].map(([layer, tech, role], i) => new TableRow({
-                        children: [
-                            cell(layer, { bold: true, fill: i % 2 === 0 ? LIGHTER_BLUE : WHITE, width: 2000, color: BRAND_BLUE }),
-                            cell(tech, { fill: i % 2 === 0 ? LIGHTER_BLUE : WHITE, width: 3506, bold: true, color: TEAL }),
-                            cell(role, { fill: i % 2 === 0 ? LIGHTER_BLUE : WHITE, width: 4400, color: MID_TEXT }),
-                        ]
-                    }))
-                ]
-            }),
-
-            gap(200, 0),
-
-            // ── SECTION 5 ── Tiến độ
-            sectionHeading("5. TIẾN ĐỘ TRIỂN KHAI (4 – 5 TUẦN)"),
-            gap(80, 0),
-
-            new Table({
-                width: { size: 9906, type: WidthType.DXA },
-                columnWidths: [1500, 3000, 4006, 1400],
-                rows: [
-                    new TableRow({
-                        children: [
-                            cell("Giai đoạn", { bold: true, fill: BRAND_BLUE, color: WHITE, width: 1500, align: AlignmentType.CENTER }),
-                            cell("Nội dung", { bold: true, fill: BRAND_BLUE, color: WHITE, width: 3000 }),
-                            cell("Deliverables", { bold: true, fill: BRAND_BLUE, color: WHITE, width: 4006 }),
-                            cell("Thời gian", { bold: true, fill: BRAND_BLUE, color: WHITE, width: 1400, align: AlignmentType.CENTER }),
-                        ]
-                    }),
-                    ...[
-                        ["Phase 1", "Khảo sát & thiết kế UI/UX", "Figma mockup các trang chính, xác nhận giao diện — ký HĐ + TT 30%", "Tuần 1"],
-                        ["Phase 2", "Frontend — Giao diện hoàn chỉnh", "Next.js + TailwindCSS, tất cả trang, responsive, animation", "Tuần 2 – 3"],
-                        ["Phase 3", "Backend + Admin Dashboard", "API sản phẩm & đơn hàng, quản lý admin, kết nối database", "Tuần 3 – 4"],
-                        ["Phase 4", "Testing, Deploy & Bàn giao", "UAT, fix bug, go-live trên VPS — TT 70% còn lại", "Tuần 5"],
-                    ].map(([phase, content, deliverable, time], i) => new TableRow({
-                        children: [
-                            cell(phase, { fill: i % 2 === 0 ? LIGHTER_BLUE : WHITE, width: 1500, bold: true, color: BRAND_BLUE, align: AlignmentType.CENTER }),
-                            cell(content, { fill: i % 2 === 0 ? LIGHTER_BLUE : WHITE, width: 3000, bold: true }),
-                            cell(deliverable, { fill: i % 2 === 0 ? LIGHTER_BLUE : WHITE, width: 4006, color: MID_TEXT, italic: true }),
-                            cell(time, { fill: i % 2 === 0 ? LIGHTER_BLUE : WHITE, width: 1400, bold: true, color: GREEN, align: AlignmentType.CENTER }),
-                        ]
-                    }))
-                ]
-            }),
-
-            gap(200, 0),
-
-            // ── SECTION 6 ── Thanh toán & Bảo hành
-            sectionHeading("6. ĐIỀU KHOẢN THANH TOÁN & BẢO HÀNH"),
+            // ── SECTION 4 ── Thanh toán & Bảo hành
+            sectionHeading("4. ĐIỀU KHOẢN THANH TOÁN & BẢO HÀNH"),
 
             subH("Thanh toán 2 đợt (30% – 70%)"),
             new Table({
@@ -397,15 +317,15 @@ const doc = new Document({
                     new TableRow({
                         children: [
                             cell("Đợt 1", { bold: true, fill: LIGHTER_BLUE, width: 1800, color: BRAND_BLUE, align: AlignmentType.CENTER }),
-                            cell("Sau khi ký hợp đồng & xác nhận thiết kế Figma (Phase 1)", { fill: LIGHTER_BLUE, width: 5706 }),
-                            cell("30% giá trị hợp đồng", { bold: true, fill: LIGHTER_BLUE, width: 2400, align: AlignmentType.CENTER, color: BRAND_BLUE }),
+                            cell("Ngay sau khi xác nhận triển khai dự án", { fill: LIGHTER_BLUE, width: 5706 }),
+                            cell("30% giá trị", { bold: true, fill: LIGHTER_BLUE, width: 2400, align: AlignmentType.CENTER, color: BRAND_BLUE }),
                         ]
                     }),
                     new TableRow({
                         children: [
                             cell("Đợt 2", { bold: true, fill: WHITE, width: 1800, color: BRAND_BLUE, align: AlignmentType.CENTER }),
-                            cell("Sau khi nghiệm thu, UAT thành công & go-live", { width: 5706 }),
-                            cell("70% giá trị hợp đồng", { bold: true, width: 2400, align: AlignmentType.CENTER, color: GREEN }),
+                            cell("Sau khi nghiệm thu và bàn giao hệ thống", { width: 5706 }),
+                            cell("70% giá trị", { bold: true, width: 2400, align: AlignmentType.CENTER, color: BRAND_BLUE }),
                         ]
                     }),
                 ]
@@ -413,25 +333,23 @@ const doc = new Document({
 
             gap(120, 0),
             subH("Bảo hành & Hỗ trợ"),
-            bullet("Bảo hành 12 tháng — sửa lỗi kỹ thuật phát sinh từ quá trình lập trình (miễn phí)"),
-            bullet("Hỗ trợ kỹ thuật qua Zalo / điện thoại trong giờ hành chính"),
-            bullet("Toàn bộ source code thuộc quyền sở hữu Khách hàng sau khi thanh toán đủ", true),
-            bullet("Hỗ trợ nâng cấp, thêm tính năng theo yêu cầu phát sinh — báo giá riêng từng hạng mục"),
+            bullet("Bảo hành 12 tháng đối với lỗi kỹ thuật phần mềm lập trình."),
+            bullet("Hỗ trợ kỹ thuật qua Zalo / điện thoại trong giờ hành chính."),
+            bullet("Toàn bộ source code thuộc quyền sở hữu của Khách hàng sau khi hoàn tất thanh toán.", true),
 
             gap(200, 0),
 
-            // ── SECTION 7 ── Liên hệ
-            sectionHeading("7. THÔNG TIN LIÊN HỆ"),
+            // ── SECTION 5 ── Liên hệ
+            sectionHeading("5. THÔNG TIN LIÊN HỆ"),
 
             new Table({
                 width: { size: 9906, type: WidthType.DXA }, columnWidths: [2500, 7406],
                 rows: [
                     new TableRow({ children: [cell("Đơn vị thực hiện", { bold: true, fill: BRAND_BLUE, color: WHITE, width: 2500 }), cell("CÔNG TY TNHH THƯƠNG MẠI & DỊCH VỤ DOSU", { bold: true, width: 7406, color: BRAND_BLUE, fontSize: 22 })] }),
                     new TableRow({ children: [cell("Người phụ trách", { bold: true, fill: LIGHT_BLUE, width: 2500 }), cell("Lại Thế Ngọc", { width: 7406, bold: true })] }),
-                    new TableRow({ children: [cell("Điện thoại / Zalo", { bold: true, fill: LIGHTER_BLUE, width: 2500 }), cell("0346 437 915", { width: 7406, bold: true, color: GREEN })] }),
+                    new TableRow({ children: [cell("Điện thoại / Zalo", { bold: true, fill: LIGHTER_BLUE, width: 2500 }), cell("0346 437 915", { width: 7406, bold: true, color: BRAND_BLUE })] }),
                     new TableRow({ children: [cell("Email", { bold: true, fill: LIGHT_BLUE, width: 2500 }), cell("support@dosutech.site", { width: 7406, color: ACCENT_BLUE })] }),
                     new TableRow({ children: [cell("Website", { bold: true, fill: LIGHTER_BLUE, width: 2500 }), cell("https://dosutech.site", { width: 7406, color: ACCENT_BLUE })] }),
-                    new TableRow({ children: [cell("MST (xuất VAT)", { bold: true, fill: LIGHT_BLUE, width: 2500 }), cell("0110638839", { width: 7406 })] }),
                 ]
             }),
 
@@ -444,14 +362,14 @@ const doc = new Document({
             }),
             new Paragraph({
                 alignment: AlignmentType.CENTER, spacing: { before: 0, after: 0 },
-                shading: { fill: GOLD, type: ShadingType.CLEAR },
-                children: [new TextRun({ text: "  Minimal · Tinh tế · Tốc độ cao · Chuẩn brand  ", bold: true, size: 18, color: BRAND_BLUE, font: "Arial" })]
+                shading: { fill: ACCENT_BLUE, type: ShadingType.CLEAR },
+                children: [new TextRun({ text: "  Đẳng Cấp · Tinh Tế · Hiện Đại  ", bold: true, size: 18, color: WHITE, font: "Arial" })]
             }),
         ]
     }]
 });
 
 Packer.toBuffer(doc).then(buf => {
-    fs.writeFileSync('/home/claude/BaoGia_WebFashion.docx', buf);
-    console.log('Done!');
+    fs.writeFileSync('d:/noithatducduong/website/BaoGia_NoiThatDucDuong_v2.docx', buf);
+    console.log('Done! Báo giá đã được tạo tại d:/noithatducduong/website/BaoGia_NoiThatDucDuong_v2.docx');
 });
